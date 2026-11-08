@@ -1,0 +1,20 @@
+# build output
+bin/  obj/  out/  x64/  x86/  Win32/  ARM64/
+*.obj  *.o  *.pdb  *.ilk  *.iobj  *.ipdb  *.exp  *.res  *.tlog
+
+# vendored prebuilt DirectXTex libraries stay tracked
+!external/**/*.lib
+
+# visual studio
+.vs/
+*.vcxproj.user  *.suo  *.user  *.aps  *.ncb  *.sdf  *.ipch
+
+# cmake (future)
+CMakeUserPresets.json  CMakeCache.txt  CMakeFiles/
+
+# misc
+Thumbs.db  desktop.ini  .DS_Store  *.log
+
+# generated (future plan structure)
+src/tests/assets/generated/
+src/app/shaders/*.cso

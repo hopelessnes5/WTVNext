@@ -1,2 +1,26 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Source text files
+*.cpp text diff=cpp
+*.h text diff=cpp
+*.inl text diff=cpp
+*.def text
+*.hlsl text
+*.cmd text
+*.sln text
+*.vcxproj text
+*.filters text
+*.props text
+*.md text
+*.editorconfig text
+
+# Windows resource scripts are stored as UTF-16LE (with BOM) — keep bytes as-is
+*.rc -text
+
+# Binaries — never normalize (includes the vendored prebuilt DirectXTex libs)
+*.ico binary
+*.lib binary
+*.exe binary
+*.dll binary
+*.pdb binary
